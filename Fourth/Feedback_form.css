@@ -1,0 +1,148 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.sidebar{
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+
+.sidebar header{
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+
+#check{
+  display: none;
+}
+
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+
+label #btn{
+  left: 20px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all  .5s; 
+}
+
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top:17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all  .5s ease; 
+ 
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none; 
+}
+
+#check:checked ~ label #cancel{
+  left: 195px;
+
+}
+
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+.form{
+  padding: 20px;
+}
+
+section{
+  font-family: arial;
+  background-image: url("bg3.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  transition: all .5s; 
+  height: 100vh;
+}
+.details {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.a {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.a:focus {
+  border: 2px solid green;
+}
+.icon {
+  padding: 10px;
+  background: green;
+  color: white;
+  min-width: 40px;
+  text-align: center;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  text-align: center;
+}

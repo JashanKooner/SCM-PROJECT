@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration Form</title>
+	<link rel="stylesheet" type="text/css" href="Registration_form.css">
+</head>
+<body>
+	<input type="checkbox" id="check">
+	<label for="check">
+		<i id="btn">Menu</i>
+		<i id="cancel">X</i>	
+	</label>
+	<div class="sidebar">
+	<header>My App</header>
+	<ul>
+		<li><a href="D:\jashan\SCM\scm project files\First\First.html">Home</a></li>
+		<li><a href="D:\jashan\SCM\scm project files\Second\Second.html">Music Player</a></li>
+		<li><a href="D:\jashan\SCM\scm project files\Third\Registration_form.html">Sing-In / Log-In</a></li>
+		<li><a href="D:\jashan\SCM\scm project files\Fourth\Feedback_form.html">Song Request</a></li>
+	</ul>
+</div>
+<section>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<form action="/action_page.php" style="max-width:500px;margin:auto">
+	<div class="form">
+		<center>
+		<h1>Register</h1>
+		<p>Please fill in this form to create an account</p>
+		</center>
+
+		<div class="details">
+			<i class="fa fa-user icon"></i>
+			<input class="a" type="text" name="first name" placeholder="First Name">
+			<i class="fa fa-user icon"></i>
+			<input class="a" type="text" name="last name" placeholder="Last Name" >
+		</div>
+
+		<div class="details">
+			<i class="fa fa-envelope icon"></i>
+		    <input class="a" type="email" name="email" placeholder="Enter Email"  required>
+		</div>
+
+		<div class="details">
+		    <i class="fa fa-key icon"></i>
+		    <input class="a" type="Password" name="psswd" placeholder="Enter Password" id="psswd" required><br><br>
+		    <i class="fa fa-key icon"></i>
+		    <input class="a" type="Password" name="retype Password" placeholder="Re-type Password" id="retype Password" required><br><br>
+		</div>
+
+		
+
+		<label for="gender"><b>Gender:</b></label>
+		<input type="radio" name="gender" id="gender">Male
+		<input type="radio" name="gender" id="gender">Female
+		<input type="radio" name="gender" id="gender">Others<br><br>
+
+
+		<input type="checkbox" name="Terms and conditions">I agree with <a href="#"> Terms and Conditions</a>
+
+	</div>
+	<button type="Submit" class="btn">Register</button>
+
+	<div class="container signin">
+    <p>Already have an account? <a href="#">Sign in</a></p>
+    </div>
+
+	</form>
+	</section>
+</body>
+</html>

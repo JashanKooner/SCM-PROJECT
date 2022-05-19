@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="et.css">
+</head>
+<body>
+<input type="checkbox" id="check">
+	<label for="check">
+		<i id="btn">Menu</i>
+		<i id="cancel">X</i>	
+	</label>
+<div class="sidebar">
+	<header>My App</header>
+	<ul>
+		<li><a href="D:\jashan\SCM\scm project files\First\First.html">Home</a></li>
+		<li><a href="D:\jashan\SCM\scm project files\Second\Second.html">Music Player</a></li>
+		<li><a href="D:\jashan\SCM\scm project files\Third\Registeration_form.html">Sing-In / Log-In</a></li>
+		<li><a href="D:\jashan\SCM\scm project files\Fourth\Feedback_form.html">Song Request</a></li>
+	</ul> 
+</div>
+<section><div class="navbar">
+			<img src="img/logo.png" class="logo">
+		</div>
+		<div class="content">
+			<div class="left">
+				<h1>The <br> real<br> sound</h1>
+			</div>
+			<div class="right">
+				<p>Recently Played</p>
+				<img src="img/play.png" id="icon">
+			</div>
+		</div>  
+</section>	
+<audio id="song">
+		<source src="img/Spaceship.mp3" type="audio/mp3">
+	</audio>
+
+<script>
+	var song = document.getElementById('song');
+	var icon = document.getElementById('icon');
+
+	icon.onclick =function () {
+        if(song.paused){
+		song.play();
+		icon.src="img/pause.png";
+	    }else{
+		song.pause();
+		icon.src="img/play.png";
+	    }
+	}
+</script>	
+</body>
+</html>
